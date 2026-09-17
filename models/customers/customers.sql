@@ -2,7 +2,7 @@
 {{ config(materialized='table') }}
 
 select  distinct 
-    customer_id
+    ROW_NUMBER() OVER (ORDER BY customer_name, city, state_or_province, postal_code) AS customer_id
     ,customer_name
     ,city
     ,state_or_province as state,
