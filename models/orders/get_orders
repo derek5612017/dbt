@@ -1,8 +1,0 @@
-with source_data as (
-    select state_or_province, count(*) as order_count
-    from default.bronze_orders
-    group by state_or_province
-)
-
-select *
-from source_data;
