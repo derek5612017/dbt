@@ -17,7 +17,7 @@ with source_data as (
 
 )
 
- select current_schema();
+ select * from workspace.default.bronze_orders;
 
 /*
     Uncomment the line below to remove records with null `id` values
