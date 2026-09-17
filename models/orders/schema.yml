@@ -1,0 +1,24 @@
+
+version: 2
+
+models:
+    - name: products
+      description: "Products dbt model"
+      columns:
+          - name: product_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: product_name
+            description: "The name of the product"
+            tests:
+                - not_null
+          - name: product_category
+            description: "The category of the product"
+            tests:
+                - not_null
+          - name: product_sub_category
+            description: "The sub-category of the product"
+            tests:
+                - not_null
