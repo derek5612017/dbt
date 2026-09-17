@@ -1,4 +1,4 @@
--- orders.sql
+-- customerss.sql
 {{ config(materialized='table') }}
 
 select  distinct 
