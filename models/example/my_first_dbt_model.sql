@@ -18,7 +18,7 @@ with source_data as (
 )
 
 select *
-from orders
+from raw.orders
 
 /*
     Uncomment the line below to remove records with null `id` values
