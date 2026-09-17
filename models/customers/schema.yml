@@ -1,0 +1,28 @@
+
+version: 2
+
+models:
+    - name: orders
+      description: "Orders dbt model"
+      columns:
+          - name: customer_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: customer_name
+            description: "The name of the customer"
+            tests:
+                - not_null
+          - name: city
+            description: "The city of the customer"
+            tests:
+                - not_null
+          - name: state
+            description: "The state or province of the customer"
+            tests:
+                - not_null
+          - name: postal_code
+            description: "The postal code of the customer"
+            tests:
+                - not_null
